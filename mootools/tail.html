@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mootools</title>
+
+    <style type="text/css">
+        #btn{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin: 12px;
+            cursor: pointer;
+        }
+
+    </style>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script type="text/javascript" src="mootools.js"></script>
+</head>
+<body>
+    <label for="color">color:</label>
+    <input type="text" name="caja1" size="15" id="cajacolo">
+
+    <label for="ancho">ancho:</label>
+    <input type="text" name="caja2" size="15" id="cajancho">
+
+    <label for="alto">alto:</label>
+    <input type="text" name="caja3" size="15" id="cajalto">
+
+    <div id="btn" onclick="cambio()"></div>
+    <div id="mostrar"></div>
+
+    <script type="text/javascript">
+        var color=$('cajacolo');
+        var ancho=$('cajancho');
+        var alto=$('cajalto');
+        var btn=$('btn');
+        var mostrar=$('mostrar');
+
+        function cambio(){
+            if((color.get('value').length==3 || color.get('value').length==6) && ancho.get('value')!="" && alto.get('value')!=""){
+                btn.setStyle('background-color', ("#"+color.get('value')));
+                btn.setStyle('width', ancho.get('value')+"px");
+                btn.setStyle('height', alto.get('value')+"px");
+                mostrar();
+            }else{
+                alert("alguno de los valores no es valido")
+            }
+        }
+
+        function mostrar(){
+            mostrar.set('text',"color: "+btn.getStyle("background-color")+"---Ancho: "+btn.getStyle("width")+"---Alto: "+btn.getStyle
+            ("height"));
+        }
+
+    </script>
+    
+</body>
+</html>
