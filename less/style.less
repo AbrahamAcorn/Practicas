@@ -1,0 +1,67 @@
+@color-letra: #3346ac;
+@background: #5f616d;
+@fondo: #313133;
+@boton:#4aa88c;
+@borde:#d4539a;
+@caja: #1e275a;
+@letra:#7985ce;
+@link:#e0d56a;
+@fuente: Consolas;
+
+body{
+    background:@background;
+}
+
+h2{
+    color: @color-letra;
+}
+
+.caja{
+    font-family: @fuente;
+}
+
+.texto{
+    color: @color-letra;
+}
+
+.menu{
+    .lista{
+        display: flex;
+        width: 100%;
+        list-style: none;
+        li{
+            border: 4px solid @borde;
+            background: @fondo;
+            margin: 15px;
+            padding: 15px;
+            a{
+                text-decoration: none;
+                color: @letra;
+            }
+        }
+
+    }
+}
+
+.estilizar{
+    border: 1px solid @borde;
+    background: @caja;
+    color: aliceblue;
+    padding: 50px;
+    width: 25%;
+}
+
+.caja{
+    .estilizar();
+}
+
+
+.texto{
+    .estilizar();
+    color: @letra;
+    font-family: @fuente;
+
+    .link{
+        
+    }
+}

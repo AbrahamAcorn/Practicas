@@ -1,0 +1,50 @@
+body {
+  background: #5f616d;
+}
+h2 {
+  color: #3346ac;
+}
+.caja {
+  font-family: Consolas;
+}
+.texto {
+  color: #3346ac;
+}
+.menu .lista {
+  display: flex;
+  width: 100%;
+  list-style: none;
+}
+.menu .lista li {
+  border: 4px solid #d4539a;
+  background: #313133;
+  margin: 15px;
+  padding: 15px;
+}
+.menu .lista li a {
+  text-decoration: none;
+  color: #7985ce;
+}
+.estilizar {
+  border: 1px solid #d4539a;
+  background: #1e275a;
+  color: aliceblue;
+  padding: 50px;
+  width: 25%;
+}
+.caja {
+  border: 1px solid #d4539a;
+  background: #1e275a;
+  color: aliceblue;
+  padding: 50px;
+  width: 25%;
+}
+.texto {
+  border: 1px solid #d4539a;
+  background: #1e275a;
+  color: aliceblue;
+  padding: 50px;
+  width: 25%;
+  color: #7985ce;
+  font-family: Consolas;
+}
